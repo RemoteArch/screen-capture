@@ -1,3 +1,4 @@
 export interface ScreenCapturePlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  start(options: { url: string }): Promise<void>;
+  stop(): Promise<void>;
 }
